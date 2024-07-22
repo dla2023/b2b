@@ -7,7 +7,7 @@ export const addCommnent = async (formData: FormData, articleId: string) => {
   const comment = formData.get("comment");
 
   if (comment) {
-      await commentApi.createComment(articleId, comment.toString());
+    await commentApi.createComment(articleId, comment.toString());
   }
 
   revalidatePath("/");

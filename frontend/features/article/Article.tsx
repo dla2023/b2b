@@ -17,7 +17,7 @@ export const Article = async ({ params }: ArticleProps) => {
   const blurUrl = await getBlurUrl(article?.attributes?.imgUrl);
 
   if (!articleId || !article) {
-    redirect('/not-found')
+    redirect("/not-found");
   }
 
   return (

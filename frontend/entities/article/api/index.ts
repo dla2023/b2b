@@ -19,11 +19,13 @@ export const articleApi = {
       {
         cache: "no-cache",
       },
-    ).then((response) => response.json()).catch(errorHandler)
+    )
+      .then((response) => response.json())
+      .catch(errorHandler);
   },
 
   get: (id: string): Promise<IGetArticleResponse> =>
-    fetch(`${API_ARTICLES_URL}/${id}?populate=*`).then((response) =>
-      response.json(),
-    ).catch(errorHandler)
+    fetch(`${API_ARTICLES_URL}/${id}?populate=*`)
+      .then((response) => response.json())
+      .catch(errorHandler),
 };

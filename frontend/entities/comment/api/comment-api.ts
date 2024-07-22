@@ -21,6 +21,8 @@ export const commentApi = {
           content: content,
         },
       }),
-    }).then((response) => response.json()).catch(errorHandler);
+    })
+      .then((response) => response.json())
+      .catch(errorHandler);
   },
 };

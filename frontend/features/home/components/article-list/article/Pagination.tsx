@@ -20,14 +20,13 @@ export const Pagination: FC<PaginationProps> = ({
   const searchParams = useSearchParams();
   const pathname = usePathname();
 
-
   useEffect(() => {
     if (limit) {
       search.set("limit", limit);
       shallowUrlUpdate(`${pathname}?${search}`);
     }
     // no need more deps
-  }, [])
+  }, []);
 
   const search = new URLSearchParams(Array.from(searchParams.entries()));
 

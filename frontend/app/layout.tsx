@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
-        <body className="container py-8 mx-auto">{children}</body>
-      </html>
+    <html lang="en">
+      <body className="container py-8 mx-auto">{children}</body>
+    </html>
   );
 }
