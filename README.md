@@ -3,6 +3,10 @@
 ## Backend
 
 ```bash
+npm i
+```
+
+```bash
 npm run develop
 ```
 
@@ -20,7 +24,7 @@ https://feature-sliced.design/
 ### To run project dev mode
 
 ```bash
-npm install
+npm i
 ```
 
 ```bash

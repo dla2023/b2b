@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["bogatyr.club", "s1.1zoom.ru", "i.artfile.ru"],
+    domains: ["bogatyr.club", "s1.1zoom.ru", "i.artfile.ru", "www.google.com"],
   },
   headers: () => [
     {

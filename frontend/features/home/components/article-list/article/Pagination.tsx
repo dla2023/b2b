@@ -22,8 +22,10 @@ export const Pagination: FC<PaginationProps> = ({
 
 
   useEffect(() => {
-    search.set("limit", limit);
-    shallowUrlUpdate(`${pathname}?${search}`);
+    if (limit) {
+      search.set("limit", limit);
+      shallowUrlUpdate(`${pathname}?${search}`);
+    }
     // no need more deps
   }, [])
 
