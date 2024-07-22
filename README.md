@@ -30,4 +30,4 @@ npm i
 ```bash
 npm run dev
 ```
-
+const ELEMENTS_PER_PAGE is responsible for number of articles per page
