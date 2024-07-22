@@ -60,18 +60,6 @@ $RECYCLE.BIN/
 *.out
 *.pid
 
-
-############################
-# Logs and databases
-############################
-
-.tmp
-*.log
-*.sql
-*.sqlite
-*.sqlite3
-
-
 ############################
 # Misc.
 ############################
@@ -105,7 +93,6 @@ coverage
 # Strapi
 ############################
 
-.env
 license.txt
 exports
 .strapi
